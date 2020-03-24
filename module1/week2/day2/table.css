@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px 15px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+tbody > tr:not(:last-child) {
+  border-bottom: 1px solid rgb(28, 28, 28, 0.2);
+}
+
+.check,
+.company,
+.phone,
+.budget,
+.date {
+  height: 32px;
+}
+
+.company {
+  padding-right: 50px;
+  text-align: left;
+}
+
+.phone,
+.budget,
+.date {
+  padding-left: 50px;
+  text-align: right;
+}
