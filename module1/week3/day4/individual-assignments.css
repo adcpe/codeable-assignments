@@ -1,0 +1,81 @@
+main {
+  width: 60%;
+  margin: 5vh auto;
+  text-align: center;
+}
+
+div {
+  margin: 2vh auto;
+}
+
+a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+
+/*
+    Circular Loader
+*/
+.loader {
+  animation: rotation linear 1.5s infinite;
+  z-index: -1;
+}
+
+@keyframes rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/*
+    Dropdown
+*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 auto;
+  width: 12vw;
+}
+
+.dropdown-content > li {
+  margin: 5vh auto;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+  animation: dropdown 1s ease-in-out forwards;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform-origin: center top;
+}
+
+.dropdown .dropdown-content li {
+  display: block;
+}
+
+@keyframes dropdown {
+  0% {
+    height: 0;
+    opacity: 0;
+    transform-origin: center top;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
