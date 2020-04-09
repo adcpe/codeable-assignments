@@ -79,9 +79,9 @@ main {
   display: grid;
   gap: 2%;
   margin: 6% auto;
-  grid-template-areas: 
-    "info-img info-h2"
-    "info-img info-p";
+  grid-template-areas:
+    'info-img info-h2'
+    'info-img info-p';
 }
 
 .features-info img {
@@ -96,4 +96,11 @@ main {
 
 .features-info p {
   grid-area: info-p;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
 }
